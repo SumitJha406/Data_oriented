@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Data Modeling Levels And Techniques | Data_origin</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Data Modeling Levels And Techniques" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Data modeling levels and techniques" />
+<meta property="og:description" content="Data modeling levels and techniques" />
+<link rel="canonical" href="https://sumitjha406.github.io/Data_oriented/2021/06/30/Data-modeling-levels-and-techniques.html" />
+<meta property="og:url" content="https://sumitjha406.github.io/Data_oriented/2021/06/30/Data-modeling-levels-and-techniques.html" />
+<meta property="og:site_name" content="Data_origin" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-06-30T00:00:00-05:00" />
+<script type="application/ld+json">
+{"description":"Data modeling levels and techniques","url":"https://sumitjha406.github.io/Data_oriented/2021/06/30/Data-modeling-levels-and-techniques.html","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://sumitjha406.github.io/Data_oriented/2021/06/30/Data-modeling-levels-and-techniques.html"},"headline":"Data Modeling Levels And Techniques","dateModified":"2021-06-30T00:00:00-05:00","datePublished":"2021-06-30T00:00:00-05:00","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/Data_oriented/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://sumitjha406.github.io/Data_oriented/feed.xml" title="Data_origin" /><link rel="shortcut icon" type="image/x-icon" href="/Data_oriented/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/Data_oriented/">Data_origin</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/Data_oriented/about/">About Me</a><a class="page-link" href="/Data_oriented/search/">Search</a><a class="page-link" href="/Data_oriented/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">Data Modeling Levels And Techniques</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2021-06-30T00:00:00-05:00" itemprop="datePublished">
+        Jun 30, 2021
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      2 min read
+    
+</span></p>
+
+    
+
+    </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p>Data modeling levels and techniques</p>
+
+<p>In this reading, you will learn about data modeling and some different types of data models. Data models help keep data consistent and give us a map of how data is organized. This makes it easier for analysts and other stakeholders to make sense of their data and use it in the right ways. As a junior data analyst, you will probably be working with the data models your organization already has in place — but understanding how data models work can help you make sense of other models you might come across on the job. </p>
+
+<p>What is data modeling?</p>
+
+<p><strong>Data modeling</strong> is the process of creating diagrams that visually represent how data is organized and structured.  These visual representations are called <strong>data models</strong>. You can think of data modeling as a blueprint of a house. At any point, there might be electricians, carpenters, and plumbers using that blueprint. Each one of these builders has a different relationship to the blueprint, but they all need it to understand the overall structure of the house. Data models are similar; different users might have different data needs, but the data model gives them an understanding of the structure as a whole. </p>
+
+<p>Levels of data modeling</p>
+
+<p>Each level of data modeling has a different level of detail.</p>
+
+<p><img src="https://SumitJha406.github.io/Data_oriented/assets/img/2021-06-30-Data-modeling-levels-and-techniques/media/image1.png" alt="" /></p>
+
+<ol>
+  <li>
+    <blockquote>
+      <p><strong>Conceptual data modeling</strong> gives you a high-level view of your data structure, such as how you want data to interact across an organization.</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p><strong>Logical data modeling</strong> focuses on the technical details of the model such as relationships, attributes, and entities.</p>
+    </blockquote>
+  </li>
+  <li>
+    <blockquote>
+      <p><strong>Physical data modeling</strong> should actually depict how the database was built. By this stage, you are laying out how each database will be put in place and how the databases, applications, and features will interact in specific detail.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>More information can be found in this <a href="https://www.1keydata.com/datawarehousing/data-modeling-levels.html"><span class="underline">comparison of data models​.</span></a></p>
+
+<p>Data-modeling techniques</p>
+
+<p>There are a lot of approaches when it comes to developing data models, but two common methods are the <strong>Entity Relationship Diagram (ERD)</strong> and the <strong>Unified Modeling Language (UML)</strong> diagram. ERDs are a visual way to understand the relationship between entities in the data model. UML diagrams are very detailed diagrams that describe the structure of a system by showing the system’s entities, attributes, operations, and the relationships. As a junior data analyst, you will need to understand that there are different data modeling techniques, but in practice, you will probably be using your organization’s existing model. </p>
+
+<p>You can read more about ERD, UML, and data dictionaries in this <a href="https://dataedo.com/blog/basic-data-modeling-techniques"><span class="underline">data modeling techniques article</span></a>.</p>
+
+<p>Data analysis and data modeling</p>
+
+<p>Data modeling can help you explore the high-level details of your data and how it is related across the organization’s information systems. Data modeling sometimes requires data analysis to understand how the data is put together; that way, you know how to map the data. And finally, data models make it easier for everyone in your organization to understand and collaborate with you on your data. This is important for you and everyone on your team!</p>
+
+  </div><a class="u-url" href="/Data_oriented/2021/06/30/Data-modeling-levels-and-techniques.html" hidden></a>
+</article>
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/Data_oriented/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/Data_oriented/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/Data_oriented/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>An easy to use blogging platform with support for Jupyter Notebooks.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li><a rel="me" href="https://github.com/fastai" title="fastai"><svg class="svg-icon grey"><use xlink:href="/Data_oriented/assets/minima-social-icons.svg#github"></use></svg></a></li><li><a rel="me" href="https://twitter.com/fastdotai" title="fastdotai"><svg class="svg-icon grey"><use xlink:href="/Data_oriented/assets/minima-social-icons.svg#twitter"></use></svg></a></li></ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
